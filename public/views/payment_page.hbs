@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="CSS/payment_style.css">
+
+</head>
+<body>
+<div class="jumbotron">
+    
+    
+    <h3>Congratulations!</h3>
+     <h4>Hi <b>{{name}}</b>, you have been successfully registered</h4>
+     <br>
+    <p><b>Please fill the form to make the payment</b> </b></p>
+
+    <form class="form-group" action="/payment" method="POST">
+
+    <div id="payment">
+        <div>
+             <button type="select" class="btn btn-light" disabled>Amount : 500/-</button>
+        </div>
+    </div>
+
+        <select class="form-control" name="bank" required>
+		<option value="" disabled selected>Select bank</option>
+        <option>ICICI Bank</option>
+        <option>Axis Bank</option>
+		<option>IDFC First Bank</option>
+		<option>Punjab National Bank</option>
+		<option>HDFC Bank</option>
+	    </select>
+
+        <input type="text" class="form-control" name="cardNo" placeholder="Card Number*" required>
+        <input type="text" class="form-control" name="holderName" placeholder="Card Holder Name*" required>
+        <input type="text" class="form-control" name="expirationDate" placeholder="Expiry Date*" required>
+        <input type="password" class="form-control" name="cvvCode" placeholder="CVV" required>
+
+        <button type="submit" class="btn btn-primary">Make Payment</button>
+    </form>
+
+   
+
+</div>
+</body>
+</html>
+
+

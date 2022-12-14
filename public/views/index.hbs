@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga App</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="CSS/index_style.css">
+
+</head>
+<body>
+      <h3>Yoga Registration Form</h3>
+<div class="jumbotron">
+<form action="/user" method="POST">
+    <div class="form-group">
+        <input type="text" class="form-control" name="name" placeholder="Name*" required>
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" name="email" placeholder="Email*" required>
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" name="phone" placeholder="Phone*" required>
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" name="age" placeholder="Age*" required>
+    </div>
+    <div class="form-group">
+        <input type="date" class="form-control" name="startDate" placeholder="Date*" required>
+    </div>
+    
+	<div className="batchTiming">
+                  <h>Select batch timing:</h>
+                  <div className="batchOptions">
+                    <div>
+                        <input type="radio" id="first" name="batch" value="1"/>
+                        <label for="first">6 AM-7 AM</label><br/>
+                    </div>
+                    <div>
+                        <input type="radio" id="second" name="batch" value="2"/>
+                        <label for="second">7 AM-8 AM</label><br/>
+                    </div>
+                    <div>
+                        <input type="radio" id="third" name="batch" value="3"/>
+                        <label for="third">8 AM-9 AM</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="fourth" name="batch" value="4"/>
+                        <label for="fourth">5 PM-6 PM</label>
+                    </div>
+                  </div>
+    </div>
+	
+    <button type="submit" class="btn btn-success">Register</button>
+</form>
+
+</div>
+</body>
+</html>
+
+

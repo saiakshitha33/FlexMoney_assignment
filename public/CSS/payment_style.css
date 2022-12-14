@@ -1,0 +1,37 @@
+body{
+    
+}
+#payment{
+    display: flex;
+    justify-content:space-between;
+    margin-bottom:10px;
+}
+
+#payment button{
+    margin-right: 5px;
+}
+
+
+body h2{
+    text-align:center;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+.jumbotron{
+    background-color: white;
+    max-width:600px;
+    margin: auto;
+}
+
+button{
+    margin-top:10px;
+}
+
+#both{
+    display:flex;
+}
+#age{
+    width:50%;
+}
+
